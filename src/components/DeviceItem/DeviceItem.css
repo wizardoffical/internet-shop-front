@@ -1,0 +1,84 @@
+.DeviceItem {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 33%;
+    height: 450px;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.DeviceItemImg {
+    margin-top: 20px;
+}
+
+.DeviceItemImg img {
+    height: 225px;
+    width: 225px;
+}
+
+.DeviceItemInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.DeviceItemInfo span:nth-of-type(1) {
+    display: flex;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.DeviceItemInfo span:nth-of-type(2) {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    height: 15px;
+}
+
+.BuyButton {
+    display: flex;
+    align-items: center;     
+}
+
+.noSkladBtn {
+    background-color: var(--accent);
+    padding: 9px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.buyBtn {
+    background-color: var(--accent);
+    padding: 9px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.9;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.buyBtn:hover {
+    opacity: 1;
+}
+
+.buyBtn:active {
+    transform: translateY(2px);
+}

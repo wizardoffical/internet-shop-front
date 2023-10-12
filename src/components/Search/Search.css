@@ -1,0 +1,98 @@
+.Search {
+    position: relative;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    margin-left: 150px;
+
+}
+
+.searchInput {
+    width: 600px;
+    padding: 11px 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.searchBtn {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchBtn:hover {
+    color: var(--accent);
+}
+
+.SearchHide {
+    display: none;
+    background-color: var(--bg-color);
+    width: 645px;
+    height: 200px;
+    position: absolute;
+    left: 152px;
+    z-index: 10;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 7%);
+    margin-top: 2px;
+}
+
+
+.SearchHide::-webkit-scrollbar-track {border-radius: 10px;}
+.SearchHide::-webkit-scrollbar {width: 6px;}
+.SearchHide::-webkit-scrollbar-thumb {border-radius: 25px;background: #f0f2f5;}
+.SearchHide:hover::-webkit-scrollbar-thumb {background: var(--accent)}
+
+.searchHideMenu {
+    padding: 10px;
+    color: black;
+    
+}
+
+.searchDeviceCard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.1s ease;
+}
+
+.searchDeviceCard:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.searchDeviceCard img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.searchDeviceInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.searchDeviceInfo span:nth-of-type(2) {
+    font-weight: 500;
+    
+}
+

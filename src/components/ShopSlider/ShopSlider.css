@@ -1,0 +1,34 @@
+.ShopSlider {
+    display: flex;
+    height: 700px;
+    background: transparent;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    
+}
+
+.ShopSlider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev::after {
+    margin-left: 100px;
+    color: black;
+}
+
+.swiper-button-next::after {
+    margin-right: 100px;
+    color: black; 
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    color: black;
+    opacity: 0.5;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+}

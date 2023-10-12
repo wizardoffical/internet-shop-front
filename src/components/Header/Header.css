@@ -1,0 +1,96 @@
+.Header {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    background-color: #fff;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.Header a img {
+    height: 85px;
+    display: flex;
+    align-self: center;
+}
+
+
+
+.headerPanel {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.loginBtn {
+    display: flex;
+    background-color: var(--accent);
+    align-items: center;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    margin-left: auto;
+}
+
+.adminButton {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    margin-left: auto;
+}
+
+.adminButton a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.adminButton a:active {
+    color: #fff;
+}
+
+.loginBtn:hover,
+.adminButton:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.cartLink {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.2s ease-in-out;
+}
+
+.cartLink:hover {
+    color: var(--accent);
+}
+
+.sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sum span:nth-of-type(1) {
+    font-size: 13px;
+    color: var(--accent);
+}
+
+.sum span:nth-of-type(2) {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: bold;
+}

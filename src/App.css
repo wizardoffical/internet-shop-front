@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sofia+Sans+Extra+Condensed:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --accent: #223265;
+    --text-color: #000;
+    --bg-color: #eaecee;
+    --border-color: #494850;
+    --swiper-theme-color: #f6f6f6;
+
+    --main-font: 'Poppins', sans-serif;
+    --second-font: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.App {
+    overflow: hidden;
+    background-color: var(--bg-color);
+    
+}
+
+.container {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+/* Страница девайса */
+
+.Title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.PageWrapper {
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 20px;
+    row-gap: 0px;
+    margin-top: 30px;
+}
+
+.deviceSide {
+    display: flex;
+}
+
+.DeviceList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-content: flex-start;
+}
+
+/* Фильтр слева */
+
+.filterOnPage {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+    height: 800px;
+    margin-bottom: 40px;
+}
+
+.filterOnPage::-webkit-scrollbar-track {border-radius: 10px;}
+.filterOnPage::-webkit-scrollbar {width: 6px;}
+.filterOnPage::-webkit-scrollbar-thumb {border-radius: 25px;background: #f0f2f5;}
+.filterOnPage:hover::-webkit-scrollbar-thumb {background: var(--accent)}
+
+.filterForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 5px;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    margin: 10px;
+    min-height: 180px;
+    overflow-y: scroll;
+}
+
+.filterForm::-webkit-scrollbar-track {border-radius: 10px;}
+.filterForm::-webkit-scrollbar {width: 6px;}
+.filterForm::-webkit-scrollbar-thumb {border-radius: 25px;background: #f0f2f5;}
+.filterForm:hover::-webkit-scrollbar-thumb {background: var(--accent)}
+
+.filterTitle {
+    font-size: 16px;
+    align-self: center;
+}
+
+.filterWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filterText {
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.checkbox input {
+    display: flex;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
